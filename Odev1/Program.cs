@@ -8,57 +8,43 @@ namespace Odev1
         {
             Urun urun1 = new Urun();
             urun1.Id = 1;
-            urun1.UrunAdi = "Diş Fırçası";
-            urun1.UrunAciklamasi = "Şarjlı Diş Fırçası";
-            urun1.UrunFiyati = 450;
-            urun1.UrunResmi = "Diş Fırçası Resmi";
+            urun1.UrunAdi = "Laptop";
+            urun1.UrunFiyati = 12500;
+            urun1.UrunAciklamasi = "Monster Bilgisayar";
+            urun1.UrunResmi = "Laptop Resmi";
 
             Urun urun2 = new Urun();
             urun2.Id = 2;
-            urun2.UrunAdi = "Kol Saati";
-            urun2.UrunAciklamasi = "Dijital saat";
-            urun2.UrunFiyati = 13.99;
-            urun2.UrunResmi = "Kol Saati Resmi";
+            urun2.UrunAdi = "Çamaşır Makinası";
+            urun2.UrunFiyati = 5600;
+            urun2.UrunAciklamasi = "Enerji Tasarrufflu";
+            urun2.UrunResmi = "Çamaşır Makinası Resmi";
 
             Urun urun3 = new Urun();
             urun3.Id = 3;
-            urun3.UrunAdi = "Çamaşır Makinası";
-            urun3.UrunAciklamasi = "Enerji Tasarruflu";
-            urun3.UrunFiyati = 5500;
-            urun3.UrunResmi = "Çamaşır Makinası Resmi";
-
-            Urun urun4 = new Urun();
-            urun4.Id = 4;
-            urun4.UrunAdi = "Tıraş Makinası";
-            urun4.UrunAciklamasi = "Enerji Tasarruflu";
-            urun4.UrunFiyati = 2500;
-            urun4.UrunResmi = "Tıraş Makinası Resmi";
+            urun3.UrunAdi = "Gözlük";
+            urun3.UrunFiyati = 700;
+            urun3.UrunAciklamasi = "İyi bir marka";
+            urun3.UrunResmi = "Gözlük Resmi";
 
 
-            Urun[] urunler = new Urun[] {urun1,urun2,urun3,urun4};
+            Urun[] urunler = new Urun[] {urun1,urun2,urun3};
 
             for (int i = 0; i < urunler.Length; i++)
             {
-                Console.WriteLine("Ürünün id'si: "+urunler[i].Id);
-                Console.WriteLine("Ürünün Adı: " + urunler[i].UrunAdi);
-                Console.WriteLine("Ürünün Fiyatı: " + urunler[i].UrunFiyati);
-                Console.WriteLine("Ürünün Resmi: " + urunler[i].UrunResmi);
-                Console.WriteLine("**********************************************");
-            }
-            Console.WriteLine("For Bitti");
-            Console.WriteLine("  ");
-            foreach (Urun urun in urunler)
-            {
-                Console.WriteLine("Ürünün id'si: " + urun.Id);
-                Console.WriteLine("Ürünün Adı: " + urun.UrunAdi);
-                Console.WriteLine("Ürünün Fiyatı: " + urun.UrunFiyati);
-                Console.WriteLine("Ürünün Resmi: " + urun.UrunResmi);
-                Console.WriteLine("*****************************************");
-
+                Console.WriteLine("Ürünün id'si: " + urunler[i].Id);
+                Console.WriteLine("Ürünün Adı: "+ urunler[i].UrunAdi);
+                Console.WriteLine("Ürünün Fiyatı: "+ urunler[i].UrunFiyati);
+                Console.WriteLine("Ürünün Açıklaması: "+ urunler[i].UrunAciklamasi);
+                Console.WriteLine("Ürünün Resmi: "+ urunler[i].UrunResmi);
+                Console.WriteLine("*********************************************");
             }
 
-            Console.WriteLine("Foreach bitti");
-            Console.WriteLine(" ");
+
+
+
+            Console.WriteLine("For döngüsü bitti");
+
             int j = 0;
 
             while (j<urunler.Length)
@@ -66,17 +52,28 @@ namespace Odev1
                 Console.WriteLine("Ürünün id'si: " + urunler[j].Id);
                 Console.WriteLine("Ürünün Adı: " + urunler[j].UrunAdi);
                 Console.WriteLine("Ürünün Fiyatı: " + urunler[j].UrunFiyati);
+                Console.WriteLine("Ürünün Açıklaması: " + urunler[j].UrunAciklamasi);
                 Console.WriteLine("Ürünün Resmi: " + urunler[j].UrunResmi);
-                Console.WriteLine("**********************************************");
-
-
+                Console.WriteLine("*********************************************");
                 j++;
+
 
             }
 
-           
-        }
+            Console.WriteLine("While döngüsü bitti");
 
+            foreach (Urun urun in urunler)
+            {
+                Console.WriteLine("Ürünün id'si: " + urun.Id);
+                Console.WriteLine("Ürünün Adı: " + urun.UrunAdi);
+                Console.WriteLine("Ürünün Fiyatı: " + urun.UrunFiyati);
+                Console.WriteLine("Ürünün Açıklaması: " + urun.UrunAciklamasi);
+                Console.WriteLine("Ürünün Resmi: " + urun.UrunResmi);
+                Console.WriteLine("*********************************************");
+
+            }
+                
+        }
        
     }
 
@@ -90,6 +87,7 @@ namespace Odev1
 
     }
 
+    
 
 
    

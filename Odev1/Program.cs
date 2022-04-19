@@ -43,6 +43,7 @@ namespace Odev1
 
 
 
+
             Console.WriteLine("For döngüsü bitti");
 
             int j = 0;

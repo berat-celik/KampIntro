@@ -12,6 +12,7 @@ namespace ClassMetotDemo
             musteri1.Soyad = "Çelik";
             musteri1.TcNo = "12345678910";
             musteri1.Yas = 21;
+            musteri1.Sifre = 1234;
 
             Musteri musteri2 = new Musteri();
             musteri2.Id = 2;
@@ -19,6 +20,7 @@ namespace ClassMetotDemo
             musteri2.Soyad = "Teke";
             musteri2.TcNo = "11111111111";
             musteri2.Yas = 20;
+            musteri2.Sifre = 4444;
 
 
             Musteri musteri3 = new Musteri();
@@ -27,6 +29,7 @@ namespace ClassMetotDemo
             musteri3.Soyad = "Parmaksız";
             musteri3.TcNo = "11111111111";
             musteri3.Yas = 23;
+            musteri3.Sifre = 5555;
 
             Musteri[] musteriler = new Musteri[] {musteri1,musteri2,musteri3};
 

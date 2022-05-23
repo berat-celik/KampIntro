@@ -11,6 +11,6 @@ namespace ClassMetotDemo
         public string Soyad { get; set; }
         public string TcNo { get; set; }
         public int Yas { get; set; }
-        
+        public int Sifre { get; set; }
     }
 }
